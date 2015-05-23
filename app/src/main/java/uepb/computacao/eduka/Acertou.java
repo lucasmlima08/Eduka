@@ -13,12 +13,6 @@ public class Acertou extends Activity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.acertou);
-
-        // Chamar Banner.
-        AdView adView = (AdView)this.findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        adRequest.isTestDevice(this);
-        adView.loadAd(adRequest);
     }
 
     public void eventoMenu(View view){
