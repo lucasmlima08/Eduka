@@ -13,12 +13,6 @@ public class Menu_Fases extends Activity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_fases);
-
-        // Chamar Banner.
-        AdView adView = (AdView)this.findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        adRequest.isTestDevice(this);
-        adView.loadAd(adRequest);
     }
 
     public void eventosFases(View view){
